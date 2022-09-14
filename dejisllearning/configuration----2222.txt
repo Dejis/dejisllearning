@@ -1,0 +1,19 @@
+pip install django
+pip install -r requirements.txt
+python -m pip install --upgrade pip
+from django.http import httpResponse
+def 	index(request):
+	return HttpResponse('Welcome to Dejisl Learning, school!')
+
+from django.contrib import admin
+from django.urls import path
+# impoted views
+fom Project name import views
+
+urlpatterns = [
+	path('admin/', admin.site.urls),
+# configured the url
+path('', views.index, name="homepage")
+
+]
+
